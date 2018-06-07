@@ -22,6 +22,180 @@
   src: url("/fonts/robotobold.woff2") format("woff2"), url("/fonts/robotobold.woff2") format("woff");
 }
 
-body {
-  font-family: "Roboto", "Arial", sans-serif;
+html {
+  box-sizing: border-box;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+          clip-path: inset(100%);
+
+  -webkit-clip-path: inset(100%);
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+
+
+.main-navigation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+}
+
+.main-navigation a {
+  color: #000000;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.user-navigation {
+  list-style: none;
+}
+
+.slider-list {
+  list-style: none;
+}
+
+.slogan {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.btn {
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+}
+
+.btn--green {
+  background-color: #00ca74;
+}
+
+.btn--yellow {
+  background-color: #efc849;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.description-lead {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.orders-description {
+  font-weight: 700;
+}
+
+.foundation-date {
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.numbers-table .value {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 10px;
+  color: #000000;
+}
+
+.numbers-table .percent {
+  font-size: 24px;
+  vertical-align: super;
+}
+
+.numbers-table .parameter {
+  line-height: 18px;
+}
+
+.partners-list {
+  list-style: none;
+}
+
+.contacts {
+  line-height: 18px;
+  color: #666666;
+}
+
+.company-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/* Модальное окно */
+.write-us-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.write-us-item label {
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+}
+
+.write-us-item input {
+  line-height: 18px;
+}
+
+/* catalog.html */
