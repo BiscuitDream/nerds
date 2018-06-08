@@ -79,6 +79,8 @@ body {
 }
 
 .main-header {
+  padding-top: 50px;
+
   background-color: #eeeeee;
 }
 
@@ -92,6 +94,7 @@ body {
 .main-navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   font-weight: 500;
   font-size: 16px;
@@ -109,17 +112,64 @@ body {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 440px;
   margin: 0;
+  margin-top: 15px;
   padding: 0;
 
   list-style: none;
 }
 
+.site-navigation-item {
+  /* margin-right: 24px; */
+  /* margin-left: 24px; */
+}
+
 .user-navigation {
+  display: flex;
+  justify-content: flex-end;
+  width: 160px;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+
   list-style: none;
 }
 
+.user-navigation-item {
+  position: relative;
+
+  margin-left: 20px;
+  padding-left: 40px;
+}
+
+/* .basket-link {
+  position: relative;
+
+  padding-left: 40px;
+}
+ */
+
+.basket-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url("/img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-50%);
+}
+
 .slider {
+  padding-top: 78px;
+
   background-color: #eeeeee;
 }
 
@@ -138,6 +188,8 @@ body {
 }
 
 .slogan {
+  margin: 0;
+
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
