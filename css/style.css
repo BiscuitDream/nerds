@@ -272,6 +272,7 @@ body {
 }
 
 /* Модальное окно */
+
 .modal-write-us {
   display: none;
   width: 960px;
@@ -296,13 +297,25 @@ body {
 
 /* catalog.html */
 
+.catalog-title-wrapper {
+  text-align: center;
+
+  background-color: #eeeeee;
+}
+
 .catalog-title {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: #000000;
+  /* text-align: center; */
+}
 
-  background-color: #eeeeee;
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .filter legend {
@@ -322,6 +335,14 @@ body {
   background-color: #eeeeee;
 }
 
+.catalog {
+  /* display: flex; */
+}
+
+.catalog-sorting {
+  display: flex;
+}
+
 .catalog-sorting-title {
   font-weight: 700;
   font-size: 18px;
@@ -330,6 +351,8 @@ body {
 }
 
 .catalog-sorting-menu {
+  display: flex;
+
   list-style: none;
 }
 
@@ -341,6 +364,20 @@ body {
 
 .catalog-sorting-item--current {
   opacity: 1;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-item {
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .price-block-title a {
