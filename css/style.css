@@ -328,6 +328,13 @@ body {
   background-color: #efc849;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .services {
   width: 1200px;
   margin: 0 auto;
@@ -341,8 +348,6 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-right: 20px;
-  padding-left: 20px;
 
   list-style: none;
 }
@@ -401,6 +406,10 @@ body {
   margin: 0 auto;
 }
 
+.description-block {
+  width: 660px;
+}
+
 .description-lead {
   font-weight: 500;
   font-size: 45px;
@@ -410,6 +419,11 @@ body {
 
 .orders-description {
   font-weight: 700;
+}
+
+.numbers-block {
+  /* width: 360px; */
+  margin-left: auto;
 }
 
 .foundation-date {
