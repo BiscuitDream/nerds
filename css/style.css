@@ -331,22 +331,68 @@ body {
 .services {
   width: 1200px;
   margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  border-bottom: 2px solid #eeeeee;
 }
 
 .services-list {
   display: flex;
   margin: 0;
   padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
 
   list-style: none;
 }
 
+.services-item {
+  width: 300px;
+  margin-right: 100px;
+}
+
+.services-item::before {
+  content: "";
+
+  display: block;
+  width: 300px;
+  height: 146px;
+  margin-bottom: 25px;
+
+  background-color: grey;
+  background-repeat: no-repeat;
+}
+
+.services-item--website::before {
+  background-color: #fb565a;
+  background-image: url("/img/illustration-1.png");
+}
+
+.services-item--app::before {
+  background-color: #00ca74;
+  background-image: url("/img/illustration-2.png");
+}
+
+.services-item--presentation::before {
+  background-color: #efc849;
+  background-image: url("/img/illustration-3.png");
+}
 
 .services-item h3 {
+  margin: 0;
+  margin-bottom: 16px;
+
   font-size: 24px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.services-item p {
+  width: 260px;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .about-us {
