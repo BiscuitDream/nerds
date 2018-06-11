@@ -280,6 +280,7 @@ body {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  color: #000000;
 }
 
 .slider-item p {
@@ -445,6 +446,8 @@ body {
 }
 
 .numbers-table .parameter {
+  width: 110px;
+
   line-height: 18px;
 }
 
