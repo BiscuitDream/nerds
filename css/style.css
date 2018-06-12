@@ -337,8 +337,8 @@ body {
 }
 
 .services {
-  width: 1200px;
-  margin: 0 auto;
+  /* width: 1200px; */
+  /* margin: 0 auto; */
   padding-top: 80px;
   padding-bottom: 80px;
 
@@ -403,8 +403,8 @@ body {
 
 .about-us {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  /* width: 1200px; */
+  /* margin: 0 auto; */
 }
 
 .description-block {
@@ -452,8 +452,9 @@ body {
 }
 
 .partners {
-  width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  /* width: 1200px; */
+  /* margin: 0 auto; */
 }
 
 .partners-list {
