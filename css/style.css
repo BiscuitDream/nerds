@@ -336,6 +336,8 @@ body {
 }
 
 .services {
+  width: 1160px;
+  margin: 0 auto;
   padding-top: 80px;
   padding-bottom: 80px;
 
@@ -400,6 +402,8 @@ body {
 
 .about-us {
   display: flex;
+  width: 1160px;
+  margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 72px;
 
@@ -504,23 +508,51 @@ body {
 }
 
 .partners {
-  /* display: flex; */
+  width: 1160px;
+  margin: 0 auto;
+
+  border-bottom: 2px solid #eeeeee;
 }
 
 .partners-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  width: 1200px;
   margin: 0;
+  margin-left: -20px;
   padding: 0;
+  padding-top: 48px;
+  padding-bottom: 42px;
 
   list-style: none;
 }
 
 .partners-item {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-content: center;
+  width: 300px;
+}
+
+.partners-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  width: 2px;
+  height: 52px;
+
+  background-color: #eeeeee;
+  transform: translateY(-50%);
+}
+
+.partners-item img {
+  display: block;
 }
 
 .contacts {
