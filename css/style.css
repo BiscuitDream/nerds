@@ -446,12 +446,27 @@ body {
 }
 
 .orders-description-items {
+  position: relative;
+
   margin-bottom: 24px;
   padding-left: 36px;
 }
 
 .orders-description-items:last-child {
   margin-bottom: 0;
+}
+
+.orders-description-items::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #fb565a;
+  transform: translateY(-50%);
 }
 
 .numbers-block {
