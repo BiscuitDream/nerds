@@ -201,7 +201,6 @@ body {
   display: inline-block;
   width: 34px;
   height: 34px;
-  /* background-color: red; */
 
   border-radius: 50%;
   cursor: pointer;
@@ -337,8 +336,6 @@ body {
 }
 
 .services {
-  /* width: 1200px; */
-  /* margin: 0 auto; */
   padding-top: 80px;
   padding-bottom: 80px;
 
@@ -403,40 +400,95 @@ body {
 
 .about-us {
   display: flex;
-  /* width: 1200px; */
-  /* margin: 0 auto; */
+  padding-top: 40px;
+  padding-bottom: 72px;
+
+  border-bottom: 2px solid #eeeeee;
 }
 
 .description-block {
   width: 660px;
+  padding-top: 34px;
 }
 
 .description-lead {
+  margin: 0;
+  margin-bottom: 33px;
+
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: #000000;
 }
 
+.description-text {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
 .orders-description {
+  margin: 0;
+  margin-bottom: 24px;
+
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.orders-description-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.orders-description-items {
+  margin-bottom: 24px;
+  padding-left: 36px;
+}
+
+.orders-description-items:last-child {
+  margin-bottom: 0;
 }
 
 .numbers-block {
-  /* width: 360px; */
   margin-left: auto;
 }
 
+.numbers-block::before {
+  content: "";
+
+  display: block;
+  width: 360px;
+  height: 208px;
+  margin-bottom: 36px;
+
+  background-image: url("/img/nerds-illustration.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .foundation-date {
+  margin: 0;
+  margin-bottom: 31px;
+
   font-weight: 700;
+  text-align: center;
   color: #000000;
   text-transform: uppercase;
 }
 
+.numbers-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
 .numbers-table .value {
+  padding-bottom: 18px;
+
   font-weight: 700;
   font-size: 45px;
-  line-height: 10px;
+  line-height: 45px;
   color: #000000;
 }
 
@@ -452,18 +504,23 @@ body {
 }
 
 .partners {
-  display: flex;
-  /* width: 1200px; */
-  /* margin: 0 auto; */
+  /* display: flex; */
 }
 
 .partners-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.partners-item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .contacts {
