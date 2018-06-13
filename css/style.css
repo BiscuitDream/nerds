@@ -328,12 +328,16 @@ body {
   background-color: #efc849;
 }
 
-.container {
+.button--contacts {
+  width: 219px;
+}
+
+/* .container {
   width: 1200px;
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
-}
+} */
 
 .services {
   width: 1160px;
@@ -525,6 +529,7 @@ body {
 .partners {
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 80px;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -570,18 +575,52 @@ body {
   display: block;
 }
 
+.main-footer {
+  position: relative;
+}
+
+.contacts-wrapper {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+
+  width: 1160px;
+
+  transform: translate(-50%);
+}
+
 .contacts {
   width: 319px;
+  padding-top: 48px;
+  padding-right: 55px;
+  padding-bottom: 47px;
+  padding-left: 50px;
 
   line-height: 18px;
   color: #666666;
+
+  background-color: #ffffff;
 }
 
 .company-name {
+  margin: 0;
+  margin-bottom: 23px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
+}
+
+.company-adress {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.company-phone {
+  margin: 0;
+  margin-bottom: 37px;
 }
 
 .map img {
