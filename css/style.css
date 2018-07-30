@@ -161,7 +161,7 @@ body {
   width: 15px;
   height: 15px;
 
-  background-image: url("/img/cart-icon.svg");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   transform: translateY(-50%);
@@ -254,19 +254,19 @@ body {
 }
 
 .slider-item:nth-child(1) {
-  background-image: url("/img/slide1.png");
+  background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: 93% 18px;
 }
 
 .slider-item:nth-child(2) {
-  background-image: url("/img/slide2.png");
+  background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .slider-item:nth-child(3) {
-  background-image: url("/img/slide3.png");
+  background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-position: 100% 20px;
 }
@@ -375,17 +375,17 @@ body {
 
 .services-item--website::before {
   background-color: #fb565a;
-  background-image: url("/img/illustration-1.png");
+  background-image: url("../img/illustration-1.png");
 }
 
 .services-item--app::before {
   background-color: #00ca74;
-  background-image: url("/img/illustration-2.png");
+  background-image: url("../img/illustration-2.png");
 }
 
 .services-item--presentation::before {
   background-color: #efc849;
-  background-image: url("/img/illustration-3.png");
+  background-image: url("../img/illustration-3.png");
 }
 
 .services-item h3 {
@@ -485,7 +485,7 @@ body {
   height: 208px;
   margin-bottom: 36px;
 
-  background-image: url("/img/nerds-illustration.png");
+  background-image: url("../img/nerds-illustration.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -667,15 +667,15 @@ body {
 }
 
 .social-button--vk {
-  background-image: url("/img/vk-icon.svg");
+  background-image: url("../img/vk-icon.svg");
 }
 
 .social-button--fb {
-  background-image: url("/img/fb-icon.svg");
+  background-image: url("../img/fb-icon.svg");
 }
 
 .social-button--insta {
-  background-image: url("/img/insta-icon.svg");
+  background-image: url("../img/insta-icon.svg");
 }
 
 .footer-social-wrapper {
