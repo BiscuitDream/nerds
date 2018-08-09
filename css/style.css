@@ -127,6 +127,12 @@ body {
   /* margin-left: 24px; */
 }
 
+.current-link {
+  padding-bottom: 9px;
+
+  border-bottom: 2px solid #fb565a;
+}
+
 .user-navigation {
   display: flex;
   justify-content: flex-end;
@@ -723,20 +729,27 @@ body {
   line-height: 18px;
 }
 
+
 /* catalog.html */
 
+
 .catalog-title-wrapper {
+  padding-top: 78px;
+  padding-bottom: 107px;
+
   text-align: center;
 
   background-color: #eeeeee;
 }
 
 .catalog-title {
+  /* text-align: center; */
+  margin: 0;
+
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: #000000;
-  /* text-align: center; */
 }
 
 .catalog-wrapper {
@@ -764,7 +777,8 @@ body {
 }
 
 .catalog {
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-sorting {
