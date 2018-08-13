@@ -987,6 +987,11 @@ input[type="checkbox"]:checked + label::before {
   background-color: #eeeeee;
 }
 
+.button--card {
+  width: 200px;
+  margin: 0 auto;
+}
+
 .catalog {
   display: flex;
   flex-direction: column;
@@ -996,6 +1001,7 @@ input[type="checkbox"]:checked + label::before {
 .catalog-sorting {
   display: flex;
   align-items: baseline;
+  margin-bottom: 55px;
   padding-top: 3px;
 
   text-transform: uppercase;
@@ -1084,8 +1090,43 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .catalog-item {
-  margin-right: 20px;
-  margin-left: 20px;
+  position: relative;
+}
+
+.catalog-item img:first-of-type {
+  opacity: 0.12;
+}
+
+.catalog-item:hover img:first-of-type {
+  opacity: 1;
+}
+
+.catalog-item img {
+  display: block;
+}
+
+.price-block {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+
+  display: none;
+  width: 360px;
+  min-height: 231px;
+
+  background-color: #eeeeee;
+}
+
+.catalog-item:hover .price-block {
+  display: block;
+}
+
+.price-block-title {
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 15px;
+
+  text-align: center;
 }
 
 .price-block-title a {
@@ -1097,7 +1138,12 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .price-block-text {
+  width: 202px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
   line-height: 18px;
+  text-align: center;
   color: #666666;
 }
 
