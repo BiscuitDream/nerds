@@ -1083,7 +1083,9 @@ input[type="checkbox"]:checked + label::before {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 0;
+  margin-right: -40px;
   padding: 0;
 
   list-style: none;
@@ -1091,6 +1093,9 @@ input[type="checkbox"]:checked + label::before {
 
 .catalog-item {
   position: relative;
+
+  margin-right: 40px;
+  margin-bottom: 33px;
 }
 
 .catalog-item img:first-of-type {
