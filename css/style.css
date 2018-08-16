@@ -818,10 +818,40 @@ body {
 
 .modal-close {
   position: absolute;
+  top: 76px;
+  right: 87px;
 
+  width: 21px;
+  height: 21px;
   padding: 0;
 
+  font-size: 0;
+
+  background-color: #ffffff;
   border: none;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  right: 0;
+
+  width: 28px;
+  height: 4px;
+
+  background-color: #fb565a;
+  border-radius: 3px;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
 
 /* catalog.html */
