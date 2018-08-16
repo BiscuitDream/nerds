@@ -733,27 +733,96 @@ body {
 /* Модальное окно */
 
 .modal-write-us {
-  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+  /* display: none; */
+
   width: 960px;
+  min-height: 590px;
+  padding-top: 67px;
+  padding-right: 100px;
+  padding-bottom: 80px;
+  padding-left: 100px;
+
+  background-color: #ffffff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  transform: translate(-50%, -50%);
 }
 
 .write-us-title {
+  margin: 0;
+  margin-bottom: 40px;
+
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: #000000;
 }
 
+.write-us-item-half-width {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.write-us-item {
+  margin: 0;
+}
+
+.write-us-item-half-width .write-us-item {
+  width: 360px;
+}
+
 .write-us-item label {
+  display: block;
+  margin-bottom: 10px;
+
   font-weight: 700;
   line-height: 18px;
   color: #000000;
 }
 
 .write-us-item input {
+  width: 360px;
+  height: 50px;
+  padding: 0 15px;
+
+  font: inherit;
   line-height: 18px;
+  color: #444444;
+
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
 }
 
+.write-us-item textarea {
+  width: 760px;
+  height: 118px;
+  margin-bottom: 40px;
+  padding: 10px 16px;
+
+  font: inherit;
+  line-height: 18px;
+  color: #444444;
+
+  border: 2px solid #d7dcde;
+
+  resize: none;
+}
+
+.button--modal {
+  width: 260px;
+}
+
+.modal-close {
+  position: absolute;
+
+  padding: 0;
+
+  border: none;
+}
 
 /* catalog.html */
 

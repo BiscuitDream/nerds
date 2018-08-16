@@ -239,8 +239,9 @@
     </footer>
 
     <section class="modal modal-write-us">
-        <h2 class="write-us-title">Напишите нам</h2>
-        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
+      <h2 class="write-us-title">Напишите нам</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="write-us-item-half-width">
           <p class="write-us-item">
             <label for="form-name">Ваше имя:</label>
             <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
@@ -249,14 +250,15 @@
             <label for="form-email">Ваш e-mail:</label>
             <input id="form-email" type="text" name="email" placeholder="email@example.com">
           </p>
-          <p class="write-us-item">
-            <label for="form-letter">Текст письма:</label>
-            <textarea id="form-letter" name="letter">В свободной форме</textarea>
-          </p>
-          <button class="btn" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
-    </div>
+        </div>
+        <p class="write-us-item">
+          <label for="form-letter">Текст письма:</label>
+          <textarea id="form-letter" name="letter" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button button--modal" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </section>
+  </div>
 </body>
 </html>
