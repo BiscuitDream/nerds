@@ -817,8 +817,8 @@ body {
   top: 50%;
   left: 50%;
   z-index: 101;
-  /* display: none; */
 
+  display: none;
   width: 960px;
   min-height: 590px;
   padding-top: 67px;
