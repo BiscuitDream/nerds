@@ -817,8 +817,8 @@ body {
   top: 50%;
   left: 50%;
   z-index: 101;
+  /* display: none; */
 
-  display: none;
   width: 960px;
   min-height: 590px;
   padding-top: 67px;
@@ -892,6 +892,21 @@ body {
   resize: none;
 }
 
+.write-us-item input:hover,
+.write-us-item textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.write-us-item input:focus,
+.write-us-item textarea:focus {
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.write-us-item input:invalid {
+  border: 2px solid #e74246;
+}
+
 .button--modal {
   width: 260px;
 }
@@ -932,6 +947,14 @@ body {
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
 }
 
 /* catalog.html */
