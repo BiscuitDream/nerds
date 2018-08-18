@@ -1189,6 +1189,17 @@ input[type="checkbox"]:checked + label::before {
   background-color: #eeeeee;
 }
 
+.button--filter:hover,
+.button--filter:focus {
+  background-color: #dfdfdf;
+}
+
+.button--filter:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d5d5d5;
+}
+
 .button--card {
   width: 200px;
   margin: 0 auto;
@@ -1391,6 +1402,18 @@ input[type="checkbox"]:checked + label::before {
   border-radius: 3px;
 }
 
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d5d5d5;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
 .pagination-item:last-of-type a {
   min-width: 260px;
 }
@@ -1398,4 +1421,15 @@ input[type="checkbox"]:checked + label::before {
 .pagination-item--current a {
   background-color: #ffffff;
   border: 3px #eeeeee solid;
+}
+
+.pagination-item--current a:hover {
+  background-color: #ffffff;
+}
+
+.pagination-item--current a:active {
+  color: #000000;
+
+  background-color: #ffffff;
+  box-shadow: none;
 }
