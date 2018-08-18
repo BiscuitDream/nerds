@@ -831,8 +831,16 @@ body {
   transform: translate(-50%, -50%);
 }
 
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -2000px);
+  }
+}
+
 .modal-show {
   display: block;
+
+  animation: bounce 0.6s;
 }
 
 .write-us-title {
